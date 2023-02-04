@@ -53,3 +53,9 @@ form input {
   height: auto;
   width: 2vw;
 }
+
+@media all and (max-width: 600) {
+  .projectBox {
+    flex-direction: row;
+  }
+}

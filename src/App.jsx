@@ -47,9 +47,9 @@ const App = () => {
         {/* <div className='h-[10vh] w-[100%] '>
           <h1 className="text-transparent">a</h1> 
         </div> */}
-        <motion.section  initial={{opacity: 0}} whileInView="visible" variants={inView} transition={{delay: .3}} id="experience" className='expSection h-[100vh] flex flex-col items-center justify-center gap-5'>
+        <motion.section  initial={{opacity: 0}} whileInView="visible" variants={inView} transition={{delay: .3}} id="experience" className='expSection h-[200vh] flex flex-col items-center justify-center gap-10 '>
           <motion.h1 className="text-white text-[22.4px] text-center mb-[5.5vh] overflow-hidden">Experience</motion.h1>
-            <div className="projectBox flex flex-row items-center justify-between w-[100%] overflow-hidden">
+            {/* <div className="projectBox flex flex-row items-center justify-between h-[100%] w-[100%] overflow-hidden">
               <div className="descTech flex flex-col justify-center items-center">
                  <h1 className="text-center text-white text-[18px] mb-2 p-10 ">Third version of a todo list app I created. This version uses firebase realtime DB <br></br>& authentication to store user private &   publicly shared collections for their todos. </h1>
                  <div className='techBox flex gap-2'>
@@ -60,18 +60,42 @@ const App = () => {
                   <a href='https://2due.co' target="_blank" className='text-white italic underline'>View Live Site</a>
                  </div>
               </div>
-              <img className='projImg h-[auto] w-[50vw]' src='../2duelanding.png'/>
-            </div>
-            <div className="projectBox flex flex-row items-center  w-[100%] justify-between overflow-hidden">
-              <div className="descTech flex flex-col justify-center items-center">
+              <img className='projImg h-[auto] w-[70vw] border-dotted border-4 border-blue-500' src='../2duelanding.png'/>
+            </div> */}
+            {/* <div className="projectBox flex flex-row items-center h-[100%] w-[100%] justify-between overflow-hidden">
                  <h1 className="text-center text-white text-[18px] mb-2 p-10  ">Website for a local activist group. I reached out and offered a website <br></br> to display their activities in the community and offer information for  <br></br>residents. Currently we are working together to develope a service <br></br> where communities can do the same all in one website.  </h1>
                  <div className='techBox flex gap-2'>
                   <img src='../tech/html5.png'/>
                   <img src='../tech/css3.png'/>
+                  <a href='https://github.com/Juleslazarus/C.N.B' target='_blank'><img src='../githublogo.png'/></a> 
                  </div>
+              <img className='projImg h-[auto] w-[50vw] border-dotted border-4 border-blue-500' src='../cnb.png'/>
+            </div> */}
+            <div className='projectsBox flex flex-col items-center'>
+              <img className='projImg h-[auto] w-[70vw] ' src='../2duelanding.png'/>
+              <div className='descTech'>
+                <h1 className='text-white text-[18px] text-center'>Third version of a todo list app I created. This version uses firebase realtime DB & authentication to store user private &   publicly shared collections for their todos. </h1>
+                <div className='techBox flex justify-center items-center gap-5'>
+                  <img src='../tech/firebase.png'/>
+                  <img src='../tech/javascript.png'/>
+                  <img src='../tech/scss.png'/>
+                  <a href='https://github.com/Juleslazarus/2Due-3.0' target='_blank'><img src='./githublogo.png'/></a>
+                  <a href='https://2due.co' target="_blank" className='text-white italic underline'>View Live Site</a>
+                </div>
               </div>
-              <img className='projImg h-[auto] w-[50vw]' src='../cnb.png'/>
             </div>
+            <div className='projectsBox flex flex-col items-center'>
+              <img className='projImg h-[auto] w-[70vw] ' src='../cnb.png'/>
+              <div className='descTech'>
+                <h1 className='text-white text-[18px] text-center'>Website for a local activist group. I reached out and offered a website to display their activities in the community and offer information for residents.<br></br> Currently we are working together to develope a service where communities can do the same all in one website. </h1>
+                <div className='techBox flex justify-center items-center gap-5'>
+                <img src='../tech/html5.png'/>
+                  <img src='../tech/css3.png'/>
+                  <a href='https://github.com/Juleslazarus/C.N.B' target='_blank'><img src='../githublogo.png'/></a> 
+                </div>
+              </div>
+            </div>
+            
         </motion.section>
     </div>
   )
