@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* img {
+  overflow: hidden;
+}
+
+i {
+  cursor: pointer;
+}
+
+form label {
+  color: white;
+}
+
+form input {
+  padding: 1rem;
+}
+
+.mainCont {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d5de0;
+}
+
+.projsCont {
+  display: grid;
+}
+
+.linkedImg,
+.githubImg {
+  height: auto;
+  width: 18px;
+}
+
+.techBox img {
+  height: auto;
+  width: 2vw;
+}
