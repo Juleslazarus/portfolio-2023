@@ -59,6 +59,21 @@ form {
 
 @media all and (max-width: 600) {
     .projectBox {
-        flex-direction: row; 
+        flex-direction: row;    
+    }
+}
+
+.techUsedCont {
+    img {
+        height: auto; 
+        width: 10vw; 
+    }
+}
+
+.downloadResumeBtn {
+    background: rgba(18, 18, 169, 0.201); 
+    transition: background .6s; 
+    &:hover {
+        background: black;
     }
 }
